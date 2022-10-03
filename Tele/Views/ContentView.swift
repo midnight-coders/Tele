@@ -13,8 +13,10 @@ struct ContentView: View {
         Show(id: UUID(), name: "Game of Thrones", service: "HBO"),
         Show(id: UUID(), name: "Picard", service: "Paramount+")]
     
+    @State private var isPresented = false
+    
     var body: some View {
-   
+        
         NavigationView {
             List {
                 ForEach(shows, id: \.id) { show in
@@ -28,7 +30,11 @@ struct ContentView: View {
                 EditButton()
             }
             .navigationTitle("Shows to Watch")
+            .navigationBarItems(trailing: Button("add") {
+                isPresented = true
+            })
         }
+        .sheet(isPresented: $isPresented, content: { AddShowScreen() })
     }
     
     func move(from source: IndexSet, to destination: Int) {

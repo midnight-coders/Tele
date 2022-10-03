@@ -14,6 +14,7 @@
 		E6D56DDC28EA9EF300FB93FD /* ShowsModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E6D56DDA28EA9EF300FB93FD /* ShowsModel.xcdatamodeld */; };
 		E6D56DDF28EA9F8A00FB93FD /* Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D56DDE28EA9F8A00FB93FD /* Show.swift */; };
 		E6D56DE228EAA25F00FB93FD /* ShowListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D56DE128EAA25F00FB93FD /* ShowListItem.swift */; };
+		E6D56DE528EAB12900FB93FD /* AddShowScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D56DE428EAB12900FB93FD /* AddShowScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		E6D56DDB28EA9EF300FB93FD /* Shows.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shows.xcdatamodel; sourceTree = "<group>"; };
 		E6D56DDE28EA9F8A00FB93FD /* Show.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Show.swift; sourceTree = "<group>"; };
 		E6D56DE128EAA25F00FB93FD /* ShowListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowListItem.swift; sourceTree = "<group>"; };
+		E6D56DE428EAB12900FB93FD /* AddShowScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddShowScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			children = (
 				E6D56DE028EAA02000FB93FD /* Views */,
 				E6D56DDD28EA9EFC00FB93FD /* Models */,
+				E6D56DE328EAB10900FB93FD /* Screens */,
 				E6D56DCC28EA9DCA00FB93FD /* TeleApp.swift */,
 				E6D56DD028EA9DCC00FB93FD /* Assets.xcassets */,
 				E6D56DD228EA9DCC00FB93FD /* Preview Content */,
@@ -90,6 +93,14 @@
 				E6D56DE128EAA25F00FB93FD /* ShowListItem.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		E6D56DE328EAB10900FB93FD /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				E6D56DE428EAB12900FB93FD /* AddShowScreen.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +175,7 @@
 			files = (
 				E6D56DDC28EA9EF300FB93FD /* ShowsModel.xcdatamodeld in Sources */,
 				E6D56DCF28EA9DCA00FB93FD /* ContentView.swift in Sources */,
+				E6D56DE528EAB12900FB93FD /* AddShowScreen.swift in Sources */,
 				E6D56DDF28EA9F8A00FB93FD /* Show.swift in Sources */,
 				E6D56DE228EAA25F00FB93FD /* ShowListItem.swift in Sources */,
 				E6D56DCD28EA9DCA00FB93FD /* TeleApp.swift in Sources */,
